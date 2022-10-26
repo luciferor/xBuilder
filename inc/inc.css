@@ -1,0 +1,284 @@
+page{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  font-size: 28rpx;
+}
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+  margin:0;
+  padding:0;
+	box-sizing: border-box;
+}
+.fill{
+  width:100%;
+  height:100%;
+}
+/* ==================
+          模糊透明
+ ==================== */
+ .blur-black{
+  backdrop-filter:saturate(300%) blur(20rpx);
+  background: rgba(1,1,1,0.3);
+ }
+
+ .blur-white{
+  backdrop-filter:saturate(300%) blur(20rpx);
+  background: rgba(248, 246, 246, 0.3);
+ }
+
+ .text-shadow{
+   text-shadow: 5rpx 0rpx 7rpx rgba(22, 22, 22, 0.589);
+ }
+ /* ======================
+            动画
+ =======================*/
+ .up-down-ani{
+  box-shadow: 0 15px 30px -8px rgba(0,0,0,0.8);
+  transition: all .25s ease;
+  animation: componentAnimate 19s ease infinite reverse;
+ }
+ @keyframes componentAnimate{
+  0% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.colors {
+  animation: point-animation 4s infinite linear;
+}
+
+@keyframes point-animation {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  50% {
+      filter: hue-rotate(360deg);
+  }
+  100% {
+      filter: hue-rotate(0deg);
+  }
+}
+.safewincontentclass {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(0, 204, 255),
+    rgb(255, 208, 0) 25%,
+    rgb(0, 255, 115) 50%,
+    rgb(255, 116, 186) 75%,
+    rgb(0, 204, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: safewincontent-animation 5s infinite linear;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: safewincontent-animation 5s infinite linear;
+}
+@keyframes safewincontent-animation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* ==================
+          黑白模式
+ ==================== */
+ @media (prefers-color-scheme: dark) {
+  page {
+      filter: invert(100%) hue-rotate(180deg);
+  }
+  ad,
+  map,
+  image,
+  canvas,
+  .viewer-main,
+  .login-bg,
+  .qrcode-main,.qrcode-img,
+  .info-main,.info-close,.login-btn,.index-bg,.item-bgs,
+  .cover-top,.cover-bottom,
+  .colors,.safewincontentclass {
+      filter: invert(1) hue-rotate(180deg)
+  }
+  .blur{
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+button::after{ border: none; }
+@keyframes lights{
+  from{
+    box-shadow: 0 0 0rpx 0rpx #0A84FF;
+  }
+  to{
+    box-shadow: 0 0 10rpx 10rpx #0A84FF;
+  }
+}
+@keyframes caylights{
+  from{
+    box-shadow: 0 0 0rpx 0rpx rgb(250, 244, 249);
+  }
+  to{
+    box-shadow: 0 0 10rpx 10rpx rgb(2, 250, 2);
+  }
+}
+/* ==================
+          颜色
+ ==================== */
+ 
+ .color-one{
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.8) 0%, rgba(238, 22, 22, 0.8) 100%);
+  box-shadow:0 0 20rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+.color-two{
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.8) 0%, rgba(5, 219, 23, 0.8) 100%);
+  box-shadow:0 0 20rpx 10rpx rgba(5, 219, 23, 0.1);
+}
+.color-three{
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.8) 0%, rgba(6, 103, 231, 0.8) 100%);
+  box-shadow:0 0 20rpx 10rpx rgba(6, 103, 231, 0.1);
+}
+.color-four{
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 212, 10, 0.8) 100%);
+  box-shadow:0 0 20rpx 10rpx rgba(248, 212, 10, 0.1);
+}
+.color-five{
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.8) 0%, rgba(192, 10, 177, 0.8) 100%);
+  box-shadow:0 0 0rpx 5rpx rgba(192, 10, 177, 0.1);
+}
+
+/* ==================
+          布局
+ ==================== */
+
+/*  -- flex弹性布局 -- */
+
+.flex {
+	display: flex;
+}
+
+.basis-xs {
+	flex-basis: 20%;
+}
+
+.basis-sm {
+	flex-basis: 40%;
+}
+
+.basis-df {
+	flex-basis: 50%;
+}
+
+.basis-lg {
+	flex-basis: 60%;
+}
+
+.basis-xl {
+	flex-basis: 80%;
+}
+
+.flex-sub {
+	flex: 1;
+}
+
+.flex-twice {
+	flex: 2;
+}
+
+.flex-treble {
+	flex: 3;
+}
+
+.flex-direction {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.self-start {
+	align-self: flex-start;
+}
+
+.self-center {
+	align-self: flex-center;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+.self-stretch {
+	align-self: stretch;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
