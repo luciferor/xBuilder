@@ -1,6 +1,7 @@
 <template>
-	<view class="indexBoxClass">
-		<view class="test">
+	<view class="indexBoxClass fix">
+		<view class="uni-header"></view>
+		<view class="uni-core-box-class">
 			
 		</view>
 	</view>
@@ -26,12 +27,7 @@
 	.indexBoxClass{
 		width:100vw;
 		height:100vh;
-		background:linen;
-		.test{
-			background-color: red;
-			width:100%;
-			height:var(--status-bar-height);
-		}
+		background:url('http://oss.dsnbc.com/images/20211121/78e716a1af33a3de27390c4bbcc5efda.png') no-repeat center center;
+		background-size: cover;
 	}
-	
 </style>

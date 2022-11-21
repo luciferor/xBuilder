@@ -1,0 +1,203 @@
+page{
+  /* background:url(http://xoss.dsnbc.com/images/20211031/789eb0f3d79ae2df6abc2a01fc89bc1b.jpeg) no-repeat center center; */
+  /* background:url(http://xoss.dsnbc.com/images/20211031/81c9cecb18a636ce61767b1e71fa92ca.jpg) no-repeat center center; */
+  background:url(http://xoss.dsnbc.com/images/20211031/eefbeb9cd078444e41adf47ffec07141.jpg) no-repeat center center;
+  /* background:url(http://xoss.dsnbc.com/images/20211031/07e1b11482b8591a510ea0a5d461bafb.jpg) no-repeat center center; */
+  background-size: cover;
+  background:#f7f7f7;
+  /* position: fixed;
+  inset: 0; */
+  /* background: url(http://oss.dsnbc.com/images/20220112/47480afcebdb9cda8adfad1f0dc5efff.png) no-repeat bottom center;
+  background-size: 100% auto; */
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  z-index: -9999;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+}
+@media (prefers-color-scheme: dark) {
+  page {
+      filter: invert(100%) hue-rotate(180deg);
+  }
+  ad,
+  slider,
+  map,
+  image,
+  canvas,
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .curs,
+  .lightsEffect,
+  .effectClass,
+  .effectClass::before,
+  .commentItemCoreBoxClass,
+  .mm,
+  .music-title-box-class,
+  .cover-img-box-class,
+  .topNicknameClass,
+  .rankingIconClass,
+  .scoreBoxClass,
+  .music-start-class,
+  .music-end-class,
+  .cu-avatar,.olors,.safewincontentclass,.tripClass,.pointClass,.effectClass {
+      filter: invert(1) hue-rotate(180deg)
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+button::after{ border: none; }
+@keyframes lights{
+  from{
+    box-shadow: 0 0 0rpx 0rpx #0A84FF;
+  }
+  to{
+    box-shadow: 0 0 10rpx 10rpx #0A84FF;
+  }
+}
+
+@keyframes caylights{
+  from{
+    box-shadow: 0 0 0rpx 0rpx rgb(250, 244, 249);
+  }
+  to{
+    box-shadow: 0 0 10rpx 10rpx rgb(2, 250, 2);
+  }
+}
+
+@keyframes widths{
+  0%{
+    width:60rpx;
+  }
+  50%{
+    width:60rpx;
+    background:#20f9e6;
+  }
+  100%{
+    width:60rpx;
+  }
+}
+
+@keyframes widthss{
+  0%{
+    width:60rpx;
+  }
+  50%{
+    width:60rpx;
+    background:#20f9e6;
+  }
+  100%{
+    width:60rpx;
+  }
+}
+
+@keyframes widthsss{
+  0%{
+    width:60rpx;
+  }
+  50%{
+    width:60rpx;
+    background:#20f9e6;
+  }
+  100%{
+    width:60rpx;
+  }
+}
+
+.line-height-class{
+  width:100%;
+  height: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-screen{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 0;
+}
+
+.one{
+  background-image: linear-gradient(-30deg, DeepPink 0%,rgb(252, 169, 213) 100%) !important;
+  box-shadow: rgba(255, 20, 145, 0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.two{
+  background-image: linear-gradient(-30deg, MediumSlateBlue 0%,rgb(192, 181, 255) 100%) !important;
+  box-shadow: rgba(124, 104, 238, 0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.three{
+  background-image: linear-gradient(-30deg, #00BFFF 0%,rgb(153, 227, 252) 100%) !important;
+  box-shadow: rgba(0, 191, 255, 0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.four{
+  background-image: linear-gradient(-30deg, #00FA9A 0%,rgb(154, 253, 215) 100%) !important;
+  box-shadow: rgba(0, 250, 154, 0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.five{
+  background-image: linear-gradient(-30deg, #FFA500 0%,rgb(255, 245, 102) 100%) !important;
+  box-shadow: rgba(255, 166, 0, 0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.six{
+  background-image: linear-gradient(-30deg, rgb(248, 106, 90) 0%,rgb(252, 162, 152) 100%) !important;
+  box-shadow: rgba(248, 106, 90,0.1) 0px 5px 8px 1px !important;
+  color:white !important;
+}
+.seven{
+  background-image: linear-gradient(-30deg, #c7c7c7 0%,#f5f5f5 100%) !important;
+  box-shadow: #f7f7f7 0px 5px 8px 1px !important;
+  color:#484848 !important;
+}
+
+.safewincontentclass {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(0, 204, 255),
+    rgb(255, 208, 0) 25%,
+    rgb(0, 255, 115) 50%,
+    rgb(255, 116, 186) 75%,
+    rgb(0, 204, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: safewincontent-animation 5s infinite linear;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: safewincontent-animation 5s infinite linear;
+}
+@keyframes safewincontent-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.streachFullClass{
+  width:100%;
+  height:100%;
+}

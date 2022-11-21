@@ -14,4 +14,6 @@
 
 <style>
 	/*每个页面公共css */
+	@import url("static/inc/inc.css");
+	@import url("static/inc/animation.css");
 </style>
