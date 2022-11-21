@@ -26,6 +26,15 @@
 .indexBoxClass {
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   background: url("http://oss.dsnbc.com/images/20211121/78e716a1af33a3de27390c4bbcc5efda.png") no-repeat center center;
   background-size: cover;
+=======
+  background: linen;
+}
+.indexBoxClass .test {
+  background-color: red;
+  width: 100%;
+  height: var(--status-bar-height);
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
 }

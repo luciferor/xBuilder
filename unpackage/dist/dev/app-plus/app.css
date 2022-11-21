@@ -2,6 +2,7 @@
 
 
 	/*每个页面公共css */
+<<<<<<< HEAD
 body{
   /* Color 可以自定义相关配色 */
   /* 标准色 */
@@ -468,3 +469,5 @@ to{
         transform: translateX(0)
 }
 }
+=======
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f

@@ -46,12 +46,20 @@ if (uni.restoreGlobal) {
     methods: {}
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+<<<<<<< HEAD
     return vue.openBlock(), vue.createElementBlock("view", { class: "indexBoxClass fix" }, [
       vue.createElementVNode("view", { class: "uni-header" }),
       vue.createElementVNode("view", { class: "uni-core-box-class" })
     ]);
   }
   var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "C:/Users/Administrator/Documents/HBuilderProjects/xBuilers/pages/index/index.vue"]]);
+=======
+    return vue.openBlock(), vue.createElementBlock("view", { class: "indexBoxClass" }, [
+      vue.createElementVNode("view", { class: "test" })
+    ]);
+  }
+  var PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__file", "/Users/anonymous/Incs/Workers/xBuilder/pages/index/index.vue"]]);
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
   __definePage("pages/index/index", PagesIndexIndex);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
@@ -71,7 +79,11 @@ if (uni.restoreGlobal) {
       formatAppLog("log", "at App.vue:10", "App Hide");
     }
   };
+<<<<<<< HEAD
   var App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "C:/Users/Administrator/Documents/HBuilderProjects/xBuilers/App.vue"]]);
+=======
+  var App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "/Users/anonymous/Incs/Workers/xBuilder/App.vue"]]);
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
   function createApp() {
     const app = vue.createVueApp(App);
     return {

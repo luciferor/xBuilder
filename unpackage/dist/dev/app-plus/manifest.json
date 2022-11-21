@@ -5,12 +5,20 @@
     "iPad"
   ],
   "id": "__UNI__7A43F76",
+<<<<<<< HEAD
   "name": "天机占卜",
+=======
+  "name": "xBuilers",
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
+<<<<<<< HEAD
   "description": "梅花易数的占卜",
+=======
+  "description": "",
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
   "developer": {
     "name": "",
     "email": "",
@@ -47,6 +55,7 @@
     "nvueStyleCompiler": "uni-app",
     "compilerVersion": 3,
     "distribute": {
+<<<<<<< HEAD
       "icons": {
         "android": {
           "hdpi": "unpackage/res/icons/72x72.png",
@@ -79,6 +88,8 @@
           }
         }
       },
+=======
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
       "google": {
         "permissions": [
           "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
@@ -98,11 +109,16 @@
           "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
         ]
       },
+<<<<<<< HEAD
       "apple": {
         "dSYMs": false
       },
       "plugins": {
         "ad": {},
+=======
+      "apple": {},
+      "plugins": {
+>>>>>>> b49aab241eeda2d0151f78acf3b6fe769070c65f
         "audio": {
           "mp3": {
             "description": "Android平台录音支持MP3格式文件"
